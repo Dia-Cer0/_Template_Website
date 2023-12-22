@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--META DATA-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Template for future websites." />
+    <meta name="author" content="Eric Hutcheson" />
+    <meta name="keywords" content="keyword-1, keyword-2," />
+
+    <!--Main Webpage Styles-->
+    <link rel="stylesheet" href="./pages/index.css" />
+
+    <!--Main Webpage Styles-->
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+
+    <!--Shortcut Icon (Photo that appears next to title)-->
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!--Google Font API (For all google fonts)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!--Inter & Noto Serif Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Tripl3-Shot Cafe</title>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="dark coffee shop logo"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li><a href="#recipes" class="nav__link">Recipes</a></li>
+            <li><a href="#book-a-table" class="nav__link">Book a table</a></li>
+            <li><a href="#menu" class="nav__link">Menu</a></li>
+            <li><a href="#contacts" class="nav__link">Contacts</a></li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent">Specialty Coffee</span> in the
+          Triple Peaks Library
+        </h1>
+        <p class="header__description">
+          Welcome to our study zone! We've got the coffee to energize you and
+          the cozy vibes to help you get creative.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="picture of triple peaks coffee shop"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
+            <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
+          </div>
+
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
+        </div>
+      </header>
+      <main class="content">
+        <section id="recipes" class="recipes">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convenience:
+          </p>
+          <div class="recipes__videos">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=lGoEOsoH70LA4tz1"
+                class="recipes__iframe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__videos-caption">
+                <span>Aeropress recipe</span> ~5 min
+              </p>
+            </div>
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/st571DYYTR8?si=rNw5wSe3t1oh-w0U"
+                title="YouTube video player"
+                class="recipes__iframe"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <p class="recipes__videos-caption">
+                <span>French press recipe</span> ~15 min
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="book-a-table" class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form">
+            <fieldset class="form__fieldset">
+              <label for="surname" class="form__label">Name *</label>
+              <input
+                required
+                id="surname"
+                type="text"
+                class="form__input"
+                placeholder="Name Surname"
+              />
+              <label for="number-of-guests" class="form__label"
+                >Number of Guests *</label
+              >
+              <input
+                required
+                id="number-of-guests"
+                type="number"
+                min="1"
+                max="8"
+                class="form__input"
+                placeholder="1-8"
+              />
+              <label for="date-and-time" class="form__label"
+                >Date & time *</label
+              >
+              <input
+                required
+                id="date-and-time"
+                type="datetime-local"
+                class="form__input"
+              />
+              <label for="your-email" class="form__label">Your email *</label>
+              <input
+                required
+                id="your-email"
+                type="email"
+                class="form__input"
+                placeholder="email@email.com"
+              />
+              <button class="form__button">Book a table</button>
+              <label for="terms-of-use" class="form__label"
+                ><input id="terms-of-use" type="checkbox" class="form__input" />
+                <span class="visible-checkbox"></span>I agree with the terms of
+                use</label
+              >
+            </fieldset>
+          </form>
+        </section>
+        <section id="menu" class="menu"></section>
+        <section id="contacts" class="about"></section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
