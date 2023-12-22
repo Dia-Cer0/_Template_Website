@@ -1,6 +1,6 @@
-# Triple Peaks Coffee Shop
+# Template Website
 
-This is the second project of the Software Engineering program at TripleTen. It was created using HTML and CSS, based on the design brief.
+This is a template website that I am going to be using as I am learning web development and I will continue to add changes as I continue on my learning path (CSS Grid needs to be included and later some react elements etc).
 
 ## Project features
 
